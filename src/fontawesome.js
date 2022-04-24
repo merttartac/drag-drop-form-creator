@@ -1,0 +1,46 @@
+import {library} from '@fortawesome/fontawesome-svg-core'
+import {
+	faCheckSquare,
+	faCoffee,
+	faDotCircle,
+	faICursor,
+	faParagraph,
+	faCalendarAlt,
+	faEllipsisV,
+	faTrashAlt,
+	faImages,
+	faImage,
+	faFile,
+	faPlusSquare,
+	faCheck,
+	faAngleDown,
+	faAngleUp,
+	faAngleDoubleUp,
+	faCaretSquareDown,
+	faSearch,
+	faHeading,
+	faEye
+} from '@fortawesome/free-solid-svg-icons'
+
+library.add(
+		faCheckSquare,
+		faCoffee,
+		faDotCircle,
+		faICursor,
+		faParagraph,
+		faCalendarAlt,
+		faEllipsisV,
+		faTrashAlt,
+		faImages,
+		faImage,
+		faFile,
+		faPlusSquare,
+		faCheck,
+		faAngleDown,
+		faAngleUp,
+		faAngleDoubleUp,
+		faCaretSquareDown,
+		faSearch,
+		faHeading,
+		faEye
+);

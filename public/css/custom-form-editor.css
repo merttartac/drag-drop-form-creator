@@ -1,0 +1,387 @@
+.drag-drop-list-container {
+	margin: 0;
+	padding: 5px !important;
+}
+
+.drop-list {
+	height: 100%;
+	border: 2px solid #1077d5;
+	/*padding: 5px;*/
+	/*border-radius: 15px;*/
+}
+
+.drag-list {
+	height: 100%;
+	border: 2px solid #1077d5;
+	padding: 5px;
+	/*border-radius: 15px;*/
+}
+
+.drop-list-header {
+	position: sticky;
+	top: 0;
+	background: #1077d5;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 3px 15px;
+	z-index: 1001;
+}
+
+.drag {
+	border: 1px solid #1077d5;
+	border-radius: 5px;
+	margin: 7px;
+	min-height: 80px;
+	padding: 3px 20px;
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+	display: flex;
+}
+
+.draggable-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.draggable-item p {
+	margin: 0 25px 5px 25px;
+	font-size: 25px;
+	color: #5c5d5d;
+	font-family: Candara, sans-serif;
+}
+
+.draggable-panel-container {
+	padding: 10px 20px 10px 20px;
+	border-radius: 5px;
+	border: 1px solid #1077d5;
+	margin: 7px;
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+	min-height: 170px;
+}
+
+.draggable-panel-header {
+	font-size: 20px;
+	background: #9e9e9e21;
+	font-family: Candara, sans-serif;
+	padding: 10px 10px 10px 15px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+.radio-button-section {
+	padding: 3px 5px 3px 5px;
+}
+
+.radio-button, .checkbox {
+	width: 15px;
+	height: 40px;
+	margin-right: 5px;
+}
+
+.radio-button-element, .checkbox-element {
+	padding: 5px 3px 5px 3px;
+	display: flex;
+	flex-direction: row;
+}
+
+.radio-button-input, .text-input, .checkbox-input {
+	min-width: 95%;
+	min-height: 40px;
+	padding: 0 10px 0 10px;
+	border-radius: 10px;
+	border: 1px solid #1A9746;
+}
+
+.radio-button-input:focus, .text-input:focus, .checkbox-input:focus {
+	outline: none;
+}
+
+.drop-target-header {
+	height: 50px;
+	background: #1077d5;
+	margin: -6px -5px 0px -6px;
+	border-radius: 14px 14px 0 0;
+	position: sticky;
+	top: 0;
+}
+
+.image-panel-body {
+	padding: 5px 10px;
+}
+
+.image-element {
+	padding: 8px 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	border: solid 1px #c6c6c6;
+	margin: 10px 0;
+}
+
+.image-box {
+	width: 159px;
+	height: 159px;
+	border: 2px solid #1A9746;
+	margin-top: 8px;
+}
+
+.select-image-button, .select-file-button {
+	border: 2px solid #1077d5;
+	width: 160px;
+	padding: 5px;
+	border-radius: 5px;
+	font-family: Candara, sans-serif;
+	color: #5e5e5e;
+	cursor: pointer;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.remove-image-button {
+	padding: 7px 5px;
+	height: 113px;
+	display: flex;
+	flex-direction: column-reverse;
+	cursor: pointer;
+}
+
+/*hide the inputs/checkmarks and submenu*/
+.dropdown-menu-checkbox, ul.submenu {
+	display: none;
+	position: absolute;
+}
+
+/*position the label*/
+label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+
+/*show the submenu when input is checked*/
+.dropdown-menu-checkbox:checked~ul.submenu {
+	display: block;
+	padding: 10px;
+	margin: 0;
+	border: 2px solid white;
+	border-radius: 10px;
+	background: #1A9746;
+	list-style-type: none;
+	position: absolute;
+	right: 0;
+	z-index: 1000;
+}
+
+.dropdown-menu-div {
+	position: absolute;
+	right: 60px;
+	padding-top: 12px;
+}
+
+.swap-items-div {
+	position: absolute;
+	right: 85px;
+	margin-top: 8px;
+	padding: 5px;
+	border: none;
+	border-radius: 15px;
+	background: #ffe38e;
+}
+
+.submenu button {
+	color: white;
+	font-size: 18px;
+	font-family: Candara, sans-serif;
+	background: transparent;
+	border: none;
+}
+
+.submenu button:focus {
+	outline: none;
+}
+
+.text-input-panel-body {
+	display: flex;
+	padding-top: 15px;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.text-input-element {
+	width: 50%;
+	padding: 10px 25px;
+}
+
+.text-input-label-init {
+	border: none;
+	border-bottom: 1px solid;
+	width: 100%;
+}
+
+.text-input-label-init:focus {
+	outline: none;
+}
+
+.text-input-remove {
+	width: 20%;
+	padding: 0px 25px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.text-area-element {
+	padding: 10px;
+}
+
+.text-area-label-init {
+	border: none;
+	border-bottom: 1px solid;
+	width: 100%;
+	margin: 10px 0;
+}
+
+.font-awesome-button {
+	cursor: pointer;
+}
+
+.edit-modal-row {
+	display: flex;
+	flex-direction: row;
+	padding: 5px 10px 5px 10px;
+	align-items: center;
+}
+
+.edit-modal-label {
+	font-size: 18px;
+	padding: 4px 0 0 10px;
+	cursor: default;
+}
+
+.date-panel-body {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+
+.date-section {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 15px;
+}
+
+.image-upload-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.dropdown-element {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px;
+}
+
+.new-option-div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 5px 10px;
+}
+
+.new-option-label {
+	margin: 0;
+	font-size: 18px;
+	padding: 5px 10px;
+}
+
+.heading-element {
+	width: 100%;
+	padding: 10px 25px;
+}
+
+.text-input-heading-init {
+	border: none;
+	border-bottom: 1px solid;
+	width: 100%;
+	text-align: center;
+	font-size: larger;
+}
+
+.text-input-heading-init:focus {
+	outline: none;
+}
+
+.preview-sheet {
+	background: white;
+	width: 90%;
+	min-height: 5px;
+}
+
+.file-element {
+	padding: 2px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background: #ecf5ff;
+	margin: 5px 0;
+}
+
+.file-name-label {
+	margin: 0;
+	font-family: Candara, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.alert-box {
+	position: sticky;
+	top: 0;
+	width: 320px;
+	min-height: 100px;
+	background: #ff7624;
+	padding: 10px 15px;
+	border: 1px solid white;
+	border-radius: 10px;
+	-webkit-animation: seconds 1.0s forwards;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 5s;
+	animation: seconds 1.0s forwards;
+	animation-iteration-count: 1;
+	animation-delay: 5s;
+}
+
+@-webkit-keyframes seconds {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes seconds {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
